@@ -1,0 +1,183 @@
+:root {
+  --ink: #10182f;
+  --paper: #f8f6f1;
+  --lime: #6c63ff;
+  --coral: #ff6b5e;
+  --sky: #c9efff;
+  --muted: #79809a;
+  --line: rgba(255, 255, 255, .16);
+}
+
+body {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(108, 99, 255, .18), transparent 28%),
+    radial-gradient(circle at 10% 38%, rgba(255, 107, 94, .08), transparent 26%),
+    var(--ink);
+}
+
+.site-header {
+  background: rgba(16, 24, 47, .7);
+  backdrop-filter: blur(18px);
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.site-header .brand {
+  margin-right: auto;
+  gap: 14px;
+}
+
+.site-header .brand-mark {
+  width: 90px;
+  height: 72px;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.site-header .brand-mark img {
+  width: 84%;
+  height: 84%;
+  left: 8%;
+  top: 8%;
+  object-fit: contain;
+  filter: saturate(1.35) brightness(1.55);
+  mix-blend-mode: screen;
+}
+
+.site-header .brand-name {
+  font-size: 16px;
+}
+
+.site-header nav {
+  margin-left: auto;
+}
+
+.site-header > .button {
+  margin-left: 34px;
+}
+
+.button,
+.marquee,
+.service-cta {
+  background: var(--coral) !important;
+}
+
+.button:hover {
+  background: #ff8a80 !important;
+}
+
+.hero h1 em,
+.approach h2 em,
+.contact h2 em,
+.footer-brand span,
+.footer-nav p,
+.process-list span {
+  color: #8e87ff !important;
+}
+
+.hero-art {
+  background: radial-gradient(circle, rgba(201, 239, 255, .12), transparent 58%);
+}
+
+.orbit {
+  border-color: rgba(142, 135, 255, .45);
+}
+
+.orbit:before {
+  background: var(--coral);
+  box-shadow: 0 0 24px var(--coral);
+}
+
+.orbit-two {
+  border-color: rgba(201, 239, 255, .28);
+}
+
+.ant-emblem {
+  filter: drop-shadow(0 0 40px rgba(108, 99, 255, .4));
+}
+
+.ant-emblem span {
+  background: linear-gradient(145deg, #8e87ff, #56c8ff);
+}
+
+.services,
+.about {
+  background: var(--paper);
+}
+
+.section-heading h2 em,
+.about h2 em {
+  color: #6c63ff;
+}
+
+.service-card:hover,
+.service-card.featured {
+  background: #172342;
+}
+
+.service-icon {
+  color: #6c63ff;
+}
+
+.approach {
+  background:
+    linear-gradient(135deg, rgba(108, 99, 255, .12), transparent 45%),
+    #10182f;
+}
+
+.about-mark {
+  background:
+    radial-gradient(circle at 72% 28%, rgba(108, 99, 255, .42), transparent 34%),
+    linear-gradient(145deg, #111a35, #2d2457);
+  box-shadow: 0 30px 70px rgba(16, 24, 47, .2);
+}
+
+.about-mark:after {
+  color: rgba(255, 255, 255, .74);
+}
+
+.about-mark .logo-crop {
+  width: 82%;
+  height: 82%;
+}
+
+.about-mark .logo-crop img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  filter: saturate(1.7) brightness(2);
+}
+
+.contact {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 107, 94, .15), transparent 35%),
+    #172342;
+}
+
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus {
+  border-color: var(--coral);
+}
+
+@media (max-width: 900px) {
+  .site-header .brand-mark {
+    width: 78px;
+    height: 60px;
+  }
+
+  .site-header .brand-mark img {
+    width: 84%;
+    height: 84%;
+    left: 8%;
+    top: 8%;
+  }
+
+  .site-header nav.open {
+    background: #172342;
+  }
+}
