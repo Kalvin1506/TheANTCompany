@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+  .site-header nav.open {
+    display: flex;
+    position: absolute;
+    top: 76px;
+    left: 24px;
+    right: 24px;
+    flex-direction: column;
+    gap: 22px;
+    padding: 28px;
+    background: #171818;
+    border: 1px solid var(--line);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, .45);
+  }
+}
